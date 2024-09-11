@@ -4,7 +4,7 @@
   background: url("../images/textura-cuero-fondo.jpg") center/cover no-repeat;
 
   .galeria-section {
-    padding: 50px 0;
+    padding: 50px 20px;
     background-color: #f8f9fa;
     text-align: center;
 
@@ -20,10 +20,17 @@
       margin-bottom: 30px;
     }
 
-    .carousel-inner {
-      img {
-        height: 500px;
-        object-fit: cover;
+    .carousel {
+      max-width: 800px;  // Ajusta el ancho máximo del carrusel
+      margin: 0 auto;    // Centra el carrusel en la página
+      border-radius: 10px; // Opcional: Agrega bordes redondeados
+
+      .carousel-inner {
+        img {
+          width: 100%;
+          height: 400px;  // Ajusta la altura del carrusel
+          object-fit: cover;  // Asegura que la imagen cubra el área sin deformarse
+        }
       }
     }
   }

@@ -3,51 +3,51 @@
 
 #contacto {
   background: url("../images/textura-cuero-fondo.jpg") center/cover no-repeat;
+  padding: 50px 20px;
+  color: $text-color;
 
   .contacto-section {
-    padding: 50px 20px;
-    color: $text-color;
-    text-align: center;
+    @include flex-center;
+    flex-direction: column;
 
     h2 {
       font-size: $font-size-large;
       margin-bottom: 20px;
     }
 
-    .contacto-container {
+    .contacto-info,
+    .contacto-form {
       @include flex-center;
-      justify-content: space-around;
-      align-items: flex-start;
-      gap: 30px;
-      flex-wrap: wrap;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
 
-      .contacto-info,
-      .contacto-form {
-        background-color: #333;
-        padding: 20px;
-        border-radius: 10px;
-        width: 45%;
-
-        h3 {
-          font-size: 1.8rem;
-          margin-bottom: 15px;
-        }
-
-        p {
-          margin: 30px 0;
-        }
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
       }
 
+      p {
+        margin: 10px 0;
+      }
+    }
+
+    .contacto-info {
       .redes-sociales {
+        margin-top: 20px;
+
         ul {
           list-style: none;
           padding: 0;
 
           li {
-            margin: 20px 0;
+            margin: 10px 0;
 
             a {
-              color: #00bfff;
+              color: $text-color;
               text-decoration: none;
 
               &:hover {
@@ -57,37 +57,35 @@
           }
         }
       }
+    }
 
-      .contacto-form {
-        form {
-          display: flex;
-          flex-direction: column;
+    .contacto-form {
+      form {
+        display: flex;
+        flex-direction: column;
 
-          label {
-            margin: 10px 0 5px;
-            font-weight: bold;
-          }
+        .form-label {
+          margin: 10px 0 5px;
+          font-weight: bold;
+        }
 
-          input,
-          textarea {
-            padding: 10px;
-            margin-bottom: 15px;
-            border: none;
-            border-radius: 5px;
-            width: 100%;
-          }
+        .form-control {
+          padding: 10px;
+          margin-bottom: 15px;
+          border: none;
+          border-radius: 5px;
+        }
 
-          button {
-            padding: 10px;
-            background-color: #00bfff;
-            color: $secondary-color;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .btn-primary {
+          background-color: #00bfff;
+          border: none;
+          border-radius: 5px;
+          padding: 10px;
+          color: $secondary-color;
+          cursor: pointer;
 
-            &:hover {
-              background-color: $button-hover;
-            }
+          &:hover {
+            background-color: $button-hover;
           }
         }
       }
