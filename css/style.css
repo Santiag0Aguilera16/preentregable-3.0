@@ -1,0 +1,540 @@
+/* Estilo general del header, se agrega padding y un borde inferior para darle estructura */
+/* El background-color define el color de fondo, y el width 100% asegura que ocupe todo el ancho de la pantalla */
+header {
+    padding: 10px 10px;
+    border-bottom: 3px solid #000000;
+    background-color: #583c3c;
+    width: 100%;
+  }
+  
+  /* Contenedor principal del header */
+  /* max-width limita el ancho máximo del contenido a 1200px */
+  /* margin: 0 auto; centra el contenedor horizontalmente */
+  /* display: flex y las propiedades de justify-content y align-items aseguran que el contenido interno esté alineado correctamente */
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* La barra de navegación usa flexbox para alinear sus elementos */
+  /* Justify-content y align-items garantizan que los elementos estén distribuidos y centrados */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Contenedor para el logo e información */
+  /* Flexbox permite alinear el logo y el texto verticalmente */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilo para el logo */
+  /* Se ajusta su tamaño y se le da un margen a la derecha para separar del texto */
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Estilo para el título principal del header */
+  /* Se define tamaño de fuente y color blanco */
+  .text-container h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
+  /* Estilo para el subtítulo del header */
+  /* Tamaño de fuente más pequeño y color blanco */
+  .text-container h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  /* Estilo para el menú de navegación */
+  /* Se quitan los puntos de la lista (list-style: none), se usa flexbox para alinear los enlaces */
+  /* gap separa los elementos del menú */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo de los enlaces de navegación */
+  /* Se quita el subrayado y se define el color del texto */
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Efecto hover para los enlaces del menú */
+  /* Cambia el color del texto a negro al pasar el ratón */
+  .nav-links a:hover {
+    color: #000000;
+  }
+  
+  /*-----------------------------*/
+  /*-- Estilo del botón "Ver más" --*/
+  /* Botón con fondo marrón, texto blanco y bordes redondeados */
+  /* Se define un tamaño de fuente y una transición suave para cambios de color */
+  .btn-ver-mas {
+    background-color: #583c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.7s;
+  }
+  
+  /* Efecto hover para el botón */
+  /* Cambia el color de fondo a negro al pasar por encima */
+  .btn-ver-mas:hover {
+    background-color: #000000;
+  }
+  
+  /* Centrado del botón dentro de su contenedor */
+  .contenedor-boton {
+    text-align: center;
+  }
+  
+  /*-------------------------------*/
+  /*-- Estilo de la Sección "Inicio" --*/
+  
+  /* Estilo para la sección de inicio */
+  /* Padding para espacio interno, flexbox para centrar el contenido */
+  /* Fondo con imagen ajustada para cubrir todo el contenedor, centrada y sin repetición */
+  .inicio {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/textura-cuero-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Margen inferior para separar el texto de otros elementos */
+  .text-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para el primer texto dentro de la sección inicio */
+  /* Tamaño de fuente, color blanco con sombra y centrado del texto */
+  .text-1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* Estilo para el segundo texto dentro de la sección inicio */
+  /* Propiedades similares al texto 1 pero con un line-height para mejor legibilidad */
+  .text-2 {
+    line-height: 1.6;
+    font-weight: bold;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* Contenedor del video */
+  /* Se centra el video horizontalmente y se ajusta el padding para un mejor diseño */
+  .video-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  /* Estilo para el video dentro de la sección */
+  /* Se ajusta el ancho al 50% del contenedor, manteniendo la relación de aspecto */
+  .video-container video {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /*-------------------------------*/
+  /*-- Estilo de la Sección "Servicios" --*/
+  /* Padding para espacio interno y fondo con imagen ajustada */
+  #servicios {
+    padding: 50px 0;
+    background-image: url("../images/textura-cuero-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Estilo para el título de la sección servicios */
+  /* Tamaño de fuente grande y margen inferior para espacio */
+  #servicios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Sombra alrededor de las tarjetas para dar un efecto de elevación */
+  #servicios .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Margen superior para separar el botón de otros elementos */
+  #servicios .contenedor-boton {
+    margin-top: 50px;
+  }
+  
+  /*-------------------------------*/
+  /*-- Estilo de la Sección "Taller" --*/
+  /* Fondo con imagen ajustada, similar a otras secciones */
+  #taller {
+    background-image: url("../images/textura-cuero-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Estilo para el encabezado de la sección taller */
+  /* Centramos el texto y agregamos un margen inferior */
+  .header-taller {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Título del taller, con tamaño de fuente grande y color blanco */
+  .header-taller h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  /* Estilo para el parrafo en la sección taller */
+  /* Color blanco y tamaño de fuente mediano */
+  .header-taller p {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  /* Grid para disposición de imágenes */
+  /* Se definen columnas y filas, con espacio entre elementos */
+  .tetris-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  
+  /* Estilo para cada ítem dentro del grid */
+  /* Fondo gris claro, bordes redondeados */
+  .grid-item {
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Estilo para las imágenes dentro del grid */
+  /* La imagen ocupa todo el ancho y alto disponible, manteniendo su proporción */
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* posición de cada ítem dentro del grid */
+  .item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .item2 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+  }
+  
+  .item3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .item4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+  }
+  
+  .item5 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  
+  .item6 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+  
+  .item7 {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+  }
+  
+  /* Estilo para los círculos */
+  /* Flexbox para alinear los círculos */
+  .circles-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Estilo individual para cada círculo */
+  /* Centramos el contenido del círculo */
+  .circle {
+    text-align: center;
+  }
+  
+  /* Estilo para las imágenes dentro de los círculos */
+  /* Imágenes redondas, con tamaño y margen inferior */
+  .circle img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para el texto debajo de cada imagen en los círculos */
+  /* Texto centrado y de color blanco */
+  .circle p {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  /*-------------------------------*/
+  /*-- Estilo de la Sección "Galeria" --*/
+  #galeria {
+    background-image: url("../images/textura-cuero-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Sección de la galería con padding y fondo claro */
+  .galeria-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+  }
+  
+  /* Estilo para el título de la galería */
+  /* Tamaño de fuente grande y margen inferior, con color blanco */
+  .galeria-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  /* Estilo para la descripción de la galería */
+  /* Fuente mediana y color blanco */
+  .galeria-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  
+  /* Estilo para las imágenes dentro del carrusel de la galería */
+  /* Imágenes con altura fija y ajuste para cubrir el contenedor */
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  /*------------------------------*/
+  /*-- Estilo de la Sección Contacto --*/
+  /*------------------------------*/
+  
+  /* Sección "Contacto" con fondo e imagen ajustada */
+  #contacto {
+    background-image: url("../images/textura-cuero-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Estilo general de la sección de contacto */
+  /* Padding interno, color blanco para el texto, y centrado del contenido */
+  .contacto-section {
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Estilo para el título de la sección contacto */
+  /* Tamaño de fuente grande y margen inferior */
+  .contacto-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de contacto con flexbox */
+  /* Alineación y separación de los elementos, con posibilidad de ajuste para pantallas pequeñas */
+  .contacto-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Estilo para la información de contacto y el formulario */
+  /* Fondo oscuro, padding interno y bordes redondeados */
+  .contacto-info,
+  .contacto-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+  }
+  
+  /* Estilo para los encabezados dentro de la información y el formulario */
+  /* Tamaño de fuente grande y margen inferior */
+  .contacto-info h3,
+  .contacto-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para los párrafos dentro de la información de contacto */
+  /* Margen para separar del resto del contenido */
+  .contacto-info p {
+    margin: 30px 0;
+  }
+  
+  /* Estilo para la lista de redes sociales */
+  /* Se quitan los puntos de la lista y se agrega margen vertical a cada ítem */
+  .redes-sociales ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilo para los ítems de la lista de redes sociales */
+  /* Se da margen vertical a cada enlace */
+  .redes-sociales li {
+    margin: 20px 0;
+  }
+  
+  /* Estilo para los enlaces de redes sociales */
+  /* Color azul y se quita el subrayado */
+  .redes-sociales a {
+    color: #00bfff;
+    text-decoration: none;
+  }
+  
+  /* Efecto hover para los enlaces de redes sociales */
+  /* Se agrega un subrayado al pasar el ratón */
+  .redes-sociales a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para el formulario de contacto */
+  /* Flexbox para alinear y ordenar los campos del formulario */
+  .contacto-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo para las etiquetas del formulario */
+  /* Margen entre las etiquetas y los campos */
+  .contacto-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  /* Estilo para los campos de texto y áreas de texto del formulario */
+  /* Padding interno, margen inferior y bordes redondeados */
+  .contacto-form input,
+  .contacto-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  /* Estilo para el botón de enviar del formulario */
+  /* Padding, color de fondo azul y bordes redondeados */
+  .contacto-form button {
+    padding: 10px;
+    background-color: #00bfff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Efecto hover para el botón de enviar */
+  /* Cambia el color de fondo al pasar el ratón */
+  .contacto-form button:hover {
+    background-color: #0088cc;
+  }
+  
+  /*------------------------------*/
+  /*-- Media Queries --*/
+  /*------------------------------*/
+  
+  /* Estilos para tablets con un ancho mínimo de 768px */
+  /* Se ajustan tamaños de fuente, padding, y ancho máximo del header */
+  @media screen and (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  
+    header {
+      padding: 15px 20px;
+      width: 100%;
+    }
+  
+    .header-container {
+      max-width: 1000px;
+    }
+  
+    .nav-links {
+      
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  /* Estilos para desktops con un ancho mínimo de 1024px */
+  /* Ajustes similares para pantallas grandes */
+  @media screen and (min-width: 1024px) {
+    header {
+      padding: 15px 30px;
+      width: 100%;
+    }
+  
+    .header-container {
+      max-width: 1200px;
+    }
+  
+    .nav-links {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
