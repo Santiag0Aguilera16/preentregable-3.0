@@ -1,0 +1,96 @@
+@import 'variables';
+@import 'mixins';
+
+#contacto {
+  background: url("../images/textura-cuero-fondo.jpg") center/cover no-repeat;
+
+  .contacto-section {
+    padding: 50px 20px;
+    color: $text-color;
+    text-align: center;
+
+    h2 {
+      font-size: $font-size-large;
+      margin-bottom: 20px;
+    }
+
+    .contacto-container {
+      @include flex-center;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+
+      .contacto-info,
+      .contacto-form {
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        width: 45%;
+
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 15px;
+        }
+
+        p {
+          margin: 30px 0;
+        }
+      }
+
+      .redes-sociales {
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin: 20px 0;
+
+            a {
+              color: #00bfff;
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      .contacto-form {
+        form {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+          }
+
+          input,
+          textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+          }
+
+          button {
+            padding: 10px;
+            background-color: #00bfff;
+            color: $secondary-color;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $button-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

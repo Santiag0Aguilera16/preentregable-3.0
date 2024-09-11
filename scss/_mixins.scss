@@ -1,0 +1,12 @@
+// Mixin para centrado flex
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Mixin para sombra
+  @mixin box-shadow($color: rgba(0, 0, 0, 0.1)) {
+    box-shadow: 0 4px 8px $color;
+  }
+  

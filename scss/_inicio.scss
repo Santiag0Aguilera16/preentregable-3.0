@@ -1,0 +1,52 @@
+@import 'variables';
+@import 'mixins';
+
+.inicio {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../images/textura-cuero-fondo.jpg") center/cover no-repeat;
+
+  .text-container {
+    margin-bottom: 20px;
+
+    .text-1, .text-2 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $text-color;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .video-container {
+    margin: 20px 0;
+    @include flex-center;
+
+    video {
+      max-width: 100%;
+      width: 50%;
+      height: auto;
+      border: none;
+      @include box-shadow;
+    }
+  }
+
+  .btn-ver-mas {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.7s;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
